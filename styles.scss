@@ -9,6 +9,25 @@ body {
   font-family: "Epilogue", sans-serif;
   // background-color: steelblue;
 }
+
+.button-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  #registerBtn {
+    border: 1px solid black;
+    min-width: 100%;
+    padding: 0.7rem;
+    display: block;
+    border-radius: 16px;
+    font-weight: 700;
+    background: transparent;
+  }
+}
+
 #cta {
   padding: 0.8rem 1.5rem 0.8rem 1.5rem;
   border: none;
@@ -25,6 +44,11 @@ nav {
   background-color: #fff;
   overflow-y: hidden;
 }
+select {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
 .nav-wrapper {
   display: flex;
   align-items: center;
@@ -40,9 +64,7 @@ nav {
 .nav-links {
   padding-top: 2rem;
   display: flex;
-
   justify-content: space-around;
-
   z-index: 100;
 }
 
@@ -106,22 +128,25 @@ nav {
 
   .nav-links {
     position: absolute;
-    left: 0px;
-    transform: translateX(-100%);
+    right: 0px;
+    transform: translateX(100%);
     height: 95vh;
     top: 5vh;
     background-color: #fff;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 65%;
     padding-left: 1.5rem;
+    padding-right: 1.5rem;
     transition: transform 0.5s ease-in;
     justify-content: start;
     color: #000;
+    // background-color: steelblue;
   }
   .nav-links li {
     opacity: 0;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+    width: 100%;
   }
   .burger {
     display: block;
