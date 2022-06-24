@@ -11,12 +11,10 @@ body {
 }
 
 .button-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-width: 100%;
   text-align: center;
   margin-top: 2rem;
+
   #registerBtn {
     border: 1px solid black;
     min-width: 100%;
@@ -188,3 +186,74 @@ select {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 /*nav se*/
+
+//acordion start
+.accordion {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition: 0.4s;
+  text-align: left;
+
+  padding-left: 0;
+  width: 80%;
+  border: none;
+  outline: none;
+
+  background: #fff;
+  // overflow: hidden;
+}
+
+.active h2 {
+  font-weight: bold;
+}
+.active,
+.accordion:hover {
+  background-color: #fff;
+}
+.panel {
+  background-color: white;
+
+  flex-direction: column;
+  overflow: hidden;
+  // max-width: 80%;
+}
+.feature {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+  img {
+    margin-right: 1rem;
+
+    display: flex;
+    align-items: center;
+  }
+}
+.arrowDown {
+  // color: red;
+
+  margin-left: 1rem;
+  align-items: flex-start;
+}
+.arrowUp {
+  display: none;
+}
+.active .arrowUp {
+  // color: red;
+  align-items: flex-start;
+  display: flex;
+  margin-left: 1rem;
+}
+.active .arrowDown {
+  // color: red;
+  align-items: flex-start;
+  display: none;
+}
+
+.accordion {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+}
