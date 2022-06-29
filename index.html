@@ -134,7 +134,10 @@
       <div class="wrapper">
         <div class="left">
           <article>
-            <h1>Make remote work</h1>
+            <h1>
+              Make <br />
+              remote work
+            </h1>
             <p>
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
@@ -157,7 +160,20 @@
           </div>
         </div>
         <div class="right">
-          <img class="img-hero" src="./images/image-hero-mobile.png" alt="" />
+          <picture>
+            <source
+              class="img-hero"
+              media="(min-width:750px)"
+              srcset="images/image-hero-desktop.png"
+            />
+            <source
+              class="img-hero"
+              media="(max-width:750px)"
+              srcset="images/image-hero-mobile.png"
+            />
+
+            <img class="img-hero" src="./images/image-hero-mobile.png" alt="" />
+          </picture>
         </div>
       </div>
     </section>
